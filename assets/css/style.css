@@ -1,0 +1,96 @@
+:root{
+    --primary-color : #6c757d;
+    --secondary-color :#e6ccb2;
+    --tertiary-color : #000;
+    --gray-shade : #adb5bd;
+}	
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-12{
+    width:100%;
+}
+
+.heading{
+    margin: 2.5rem 0 2rem;
+}
+
+ul{
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li{
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+}
+
+ul li a{
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1.3rem;
+    width: 100%;
+}
+
+ul>li>a:hover{
+    background-color: var(--gray-shade);
+    color: var(--tertiary-color);
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box i{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width : 800px) {
+    .main{
+        flex-wrap: wrap;
+        transform: translateY(-104%);
+        transition: all 0.7s ease-in-out;
+    }
+    .main li{
+        flex-basis: 100%;
+    }
+    .box i{
+        display: block;
+    }
+    .nav-list{
+        overflow: hidden;
+    }
+    .active{
+        transform: translateY(0);
+    }
+    
+}
