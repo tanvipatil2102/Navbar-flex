@@ -79,7 +79,6 @@ ul>li>a:hover{
         flex-wrap: wrap;
         transform: translateY(-104%);
         transition: all 0.7s ease-in-out;
-        display: none;
     }
     .main li{
         flex-basis: 100%;
@@ -92,7 +91,6 @@ ul>li>a:hover{
     }
     .active{
         transform: translateY(0);
-        display: block;
     }
     
 }
